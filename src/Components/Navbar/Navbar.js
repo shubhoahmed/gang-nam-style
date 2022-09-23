@@ -5,7 +5,7 @@ const Navbar = ({ count }) => {
         <div>
             <div className="navbar bg-base-100 shadow-lg lg:px-20">
                 <div className="flex-1">
-                    <a href='/' className="btn btn-ghost normal-case text-xl">Gangnam Store</a>
+                    <a href='/' className="btn btn-success normal-case text-xl">Gangnam Store</a>
                 </div>
                 <div className="flex-none ">
                     <div className="dropdown dropdown-end mr-2">
