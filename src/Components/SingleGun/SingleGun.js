@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from '../Modal/Modal';
 
 const SingleGun = ({ gun, cartIncrease }) => {
     const { action, name, price, bullet, id, img, category, capacity } = gun;
@@ -19,10 +20,12 @@ const SingleGun = ({ gun, cartIncrease }) => {
                     </div>
                     <div className='mt-2'>
                         <button onClick={() => cartIncrease()} className="btn btn-primary btn-sm mr-2">Add to Cart</button>
-                        <button className="btn btn-success btn-sm">Details</button>
+                        {/* <button className="btn btn-success btn-sm">Details</button> */}
+                        <label htmlFor="my-modal-3" className="btn  btn-success btn-sm modal-button">Details</label>
                     </div>
                 </div>
             </div>
+            <Modal gun={gun}></Modal>
         </div>
     );
 };
